@@ -1,6 +1,6 @@
 
 body{
-	margin: 30px;
+	
 	background-color: #ebe6e6;
 	align-items: center;
 	justify-content: center;
@@ -44,7 +44,7 @@ h6{
 	overflow: auto;
 	padding: 10px;
 	border-radius: 10px;
-	margin-left: 10px;
+	/* margin-left: 10px; */
 }
 
 .mission{
@@ -54,13 +54,13 @@ h6{
 	overflow: auto;
 	padding: 10px;
 	border-radius: 10px;
-	margin-left: 10px;
+	/* margin-left: 10px; */
 }
 
 .menu{
 	display: inline-block;
 	/* float: right; */
-	margin: 10px;
+	/* margin: 10px; */
 	align-items: center;
 	justify-content: flex-end;
 }
@@ -75,9 +75,9 @@ h6{
 .TheImage{
    /* background-color:rgb(7, 62, 240) ; --> */
 	display: inline-block;
-	width: auto;
+	/* width: auto; */
 	
-	height: auto;
+	/* height: auto; */
 	overflow: hidden;
 	
 
@@ -92,6 +92,11 @@ h6{
 	padding: 5px;
 	
 	height: auto;
+}
+.form{
+	background-color: rgb(39, 38, 38);
+	color: aliceblue;
+	padding: 10px;
 }
 #fname,
 #Sname,
