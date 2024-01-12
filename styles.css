@@ -114,7 +114,7 @@ h6{
 		}
 	  }
 	  
-	   @media screen and (max-width: 00px) {
+	   @media screen and (max-width: 600px) {
 		.navbar.responsive {position: relative;}
 		.navbar.responsive .icon {
 		  position: absolute;
