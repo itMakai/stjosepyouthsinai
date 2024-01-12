@@ -1,0 +1,124 @@
+
+body{
+	margin: 30px;
+	background-color: #ebe6e6;
+	align-items: center;
+	justify-content: center;
+}
+
+#link{
+	text-decoration: none;
+	font-size: larger;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
+	color: #6011f1;
+}
+img{
+	height: 150px;
+	border-radius: 20px;
+	display: inline-block;
+	object-fit: contain;
+	height: 100px;
+	width: 50px;
+} 
+
+
+h6{
+	margin-left: px;
+	color: #15cf0f;
+	border-radius: 20px;
+	background-color: blanchedalmond;
+	padding: 20px;
+	cursor: pointer;
+	display: inline-block;
+	font-size:10vw
+	text-align: center;
+	overflow: auto;
+	
+}
+
+.vission{
+	<!-- background-color: rgb(30, 255, 0); -->
+	text-align: center;
+	display: inline-block;
+	overflow: auto;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+.mission{
+	 /* background-color: rgb(30, 255, 0);  */
+	text-align: center;
+	display: inline-block;
+	overflow: auto;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+.menu{
+	display: inline-block;
+	/* float: right; */
+	margin: 10px;
+	align-items: center;
+	justify-content: flex-end;
+}
+.menuitem{
+	display: inline-block;
+	display:flexbox;
+	margin: 5px;
+	text-decoration: none;
+	align-items: center;
+	justify-content: flex-end;
+}
+.TheImage{
+   /* background-color:rgb(7, 62, 240) ; --> */
+	display: inline-block;
+	width: auto;
+	
+	height: auto;
+	overflow: hidden;
+	
+
+}
+.chaplain{
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	width: auto;
+	
+	border-radius: 15px;
+	padding: 5px;
+	
+	height: auto;
+}
+#fname,
+#Sname,
+#message{
+	margin-top: 10px;
+}
+#submit{
+	font-size: medium;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width:800px) {
+	/* For tablets: */
+	.TT, .desc, .nav,.btn {
+	  width: 80%;
+	  padding: 0;
+	}
+	.right {
+	  width: 100%;
+	}
+  }
+  @media only screen and (max-width:500px) {
+	/* For mobile phones: */
+	.nav, .desc, .TT, .btn {
+	  width: 100%;
+	}
+	p{
+		display: block;
+	}
