@@ -1,7 +1,12 @@
+.content{
+	margin-top: 9%;
+}
+
+
 
 body{
 	
-	background-color: #f0f0f5;
+	background-color: #e3e3f3;
 	align-items: center;
 	justify-content: center;
 }
@@ -64,7 +69,7 @@ h6{
 }
 
 /* styles for the message submit form */
-.form{
+#contact{
 	background-color: rgb(39, 38, 38);
 	color: aliceblue;
 	padding: 10px;
@@ -86,6 +91,11 @@ h6{
 	.navbar {
 		overflow: hidden;
 		background-color: #333;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		text-align: center;
+		justify-content: center;
 	  }
 	  
 	  .navbar a {
@@ -93,6 +103,7 @@ h6{
 		display: block;
 		color: white;
 		text-align: center;
+		justify-content: center;
 		padding: 14px 16px;
 		text-decoration: none;
 	  }
@@ -114,7 +125,7 @@ h6{
 		}
 	  }
 	  
-	   @media screen and (max-width: 600px) {
+	   @media screen and (max-width: 900px) {
 		.navbar.responsive {position: relative;}
 		.navbar.responsive .icon {
 		  position: absolute;
