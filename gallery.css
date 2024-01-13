@@ -1,0 +1,40 @@
+*{
+	background-color: rgb(244, 244, 245);
+}
+
+.navbar{
+	/* background-color: aqua; */
+	padding: 5px;
+	border-radius: 5px;
+	align-content:center;
+	justify-content: flex-end;
+
+	display: flex;
+	position: fixed;
+	width: 100%;
+
+}
+#homelink{
+	text-decoration: none;
+	/* background-color:aqua; */
+	margin-right: 20px;
+}
+
+
+#icon{
+	height: 20px;
+	border-radius: 30% 0 50%;
+	margin-right: 50%;
+}
+.photos{
+	margin-top: 10px;
+	display: flex;
+	background-color: blanchedalmond;
+	justify-content: center;
+	padding: 20px;
+	width: 100%;
+}
+#image{
+	margin-left: 10px;
+	
+}
