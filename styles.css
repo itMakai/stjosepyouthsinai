@@ -1,5 +1,5 @@
 .content{
-	margin-top: 9%;
+	margin-top: 15%;
 }
 
 
@@ -96,16 +96,18 @@ h6{
 		top: 0;
 		text-align: center;
 		justify-content: center;
+		
 	  }
 	  
 	  .navbar a {
-		float: left;
+		float: right;
 		display: block;
 		color: white;
 		text-align: center;
 		justify-content: center;
 		padding: 14px 16px;
 		text-decoration: none;
+		margin-right: 5%;
 	  }
 	  
 	   a:hover {
