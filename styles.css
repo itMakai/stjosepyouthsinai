@@ -90,7 +90,7 @@ h6{
 	}
 	.navbar {
 		overflow: hidden;
-		background-color: #333;
+		background-color: #fcf6f6;
 		position: fixed;
 		width: 100%;
 		top: 0;
@@ -102,7 +102,7 @@ h6{
 	  .navbar a {
 		float: right;
 		display: block;
-		color: white;
+		color: rgb(7, 6, 6);
 		text-align: center;
 		justify-content: center;
 		padding: 14px 16px;
