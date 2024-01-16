@@ -44,10 +44,13 @@
   
   .gallery img {
 	width: 100%;
-	height: auto;
+	height: 320px;
   }
 
   #lor{
 	display: inline-block;
   }
+
+
+  
   
