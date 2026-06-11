@@ -2,94 +2,458 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="st Joseph catholic church sinai in st mary's parish Mukuru">
-    <title>st Joseph youth sinai</title>
-    <link rel="shortcut icon" href="st Joseph&Son.jpeg" type="image/x-icon">
+    <meta name="description" content="St. Joseph Catholic Church Sinai Youth — Spreading the love of Christ to youths in Nairobi's Sinai estate. Join our vibrant faith community at St. Mary's Parish, Mukuru.">
+    <meta name="theme-color" content="#1a237e">
+    <meta property="og:title" content="St. Joseph Youth Sinai | Growing in Faith Together">
+    <meta property="og:description" content="A vibrant Catholic youth community in Nairobi's Sinai estate, united in faith and service.">
+    <meta property="og:image" content="Screenshot_20230609-142725.jpg">
+    <title>St. Joseph Youth Sinai | St. Mary's Parish, Mukuru</title>
+
+    <link rel="icon" href="The cross.jpeg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    
 </head>
 <body>
-    <center>
-    <div class="content">
-    <div style="background-color:hsl(175, 57%, 95%);padding;text-align:center;padding:5px;:15px;">
-        ST JOSEPH CATHOLIC CHURCH SINAI YOUTH
-       </div>
-        
- 
-   <div class="navbar" id="myNavbar">
-    <a href="#home">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="#services">Services</a>
-    <a href="#contact" >Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><div>|||</div>
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-   <br>
-   <div class="TheImage">
-        This is a rare photo of the some of the youth members in the field doing <br> exercise and also practising for the 
-        deanary sports
-        <br>
-        <br>
-    <img src="Screenshot_20230609-142725.jpg" style="width: 100%;float: left;height: 300px;margin-top: auto;" alt="members">
-     <div class="mission">
-    <h6>
-        OUR MISSION
-       </h6>
-       <br>
-    To spread love of christ to the fellow youths around <br> the world and <br>
-    let them understand the reason why we should know <br>
-    and serve christ at our young age.
-</div>
-<br>
-   <!-- <br> -->
-   <div class="vission">
-    <h6>
-        OUR VISSION 
-       </h6>
-       <br> 
-    To win more souls to christ through spread of the gospel <br>
-    and sharing what we have with others.
 
-    <br>
-    <br>
-    <div class="chaplain"> 
-     Youth Chaplain St Marys Parish <em> <br> Fr Barnabas Nyakundi 'Chinendu'</em> <br>
- <img src="9974.jpg "style="height: 300px;width: 300px" alt="chaplain priest">
- <form action="" id="contact">
-    <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatem suscipit quibusdam explicabo deleniti, <br> debitis praesentium ullam ut, doloribus quaerat harum dicta aliquid fugiat repellat magnam molestias. Voluptatibus, unde cum?
-    </div>
-    <br>
-     <label for="fname">Your First Name</label> <br>
-     <input type="text" id="fname"> <br>
-     <br>
-     <label for="Sname">Your Second Name</label> <br>
-     <input type="text" id="Sname"><br>
-     <br>
-     <label for="message">Your Message</label> <br>
-     <textarea name="" id="message" cols="30" rows="10"></textarea> <br>
-     <br>
-    <button id="submit">Submit</button>
- </form> 
- <br>
- <div style="text-align:center;padding-left:5px;padding-right: 5px;align-content: center;justify-content: center;
-    font-size:12px;margin-top: 30px;display: block;"> 
-        welcome to st joseph youth group located Nairobi LungaLunga road Sinai</div>
-         <br> 
-         &copy; 2024 by itsoftmak
+    <!-- ==============================
+         NAVBAR
+    ============================== -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-inner">
+            <a href="#hero" class="nav-logo" aria-label="St. Joseph Youth Sinai Home">
+                <div class="nav-logo-icon">✝</div>
+                <div>
+                    <div class="nav-logo-text">St. Joseph Youth</div>
+                    <div class="nav-logo-subtitle">Sinai, Nairobi</div>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#hero"           class="nav-link active" id="nav-home">Home</a>
+                <a href="#mission"        class="nav-link"        id="nav-about">About</a>
+                <a href="#chaplain"       class="nav-link"        id="nav-chaplain">Chaplain</a>
+                <a href="#events"         class="nav-link"        id="nav-events">Events</a>
+                <a href="gallery.html"    class="nav-link"        id="nav-gallery">Gallery</a>
+                <a href="#contact"        class="nav-link nav-cta" id="nav-contact">Contact Us</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
- </div>
-</div>
-<br>
-        <br>
-       
-</div>
-    </center>
- </div>
-  
+    </nav>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <a href="#hero"        class="nav-link" id="mnav-home"><i class="fas fa-home fa-fw"></i> Home</a>
+        <a href="#mission"     class="nav-link" id="mnav-about"><i class="fas fa-book-open fa-fw"></i> About</a>
+        <a href="#chaplain"    class="nav-link" id="mnav-chaplain"><i class="fas fa-cross fa-fw"></i> Our Chaplain</a>
+        <a href="#events"      class="nav-link" id="mnav-events"><i class="fas fa-calendar fa-fw"></i> Events</a>
+        <a href="gallery.html" class="nav-link" id="mnav-gallery"><i class="fas fa-images fa-fw"></i> Gallery</a>
+        <a href="#contact"     class="nav-link nav-cta" id="mnav-contact"><i class="fas fa-envelope fa-fw"></i> Contact Us</a>
+    </div>
+
+    <!-- ==============================
+         HERO SECTION
+    ============================== -->
+    <section id="hero" aria-label="Hero banner">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-tag">
+                <i class="fas fa-cross"></i>
+                St. Mary's Parish, Mukuru &middot; Nairobi, Kenya
+            </div>
+            <h1 class="hero-title">
+                Growing in Faith,
+                <span class="highlight">Together in Christ.</span>
+            </h1>
+            <p class="hero-desc">
+                Welcome to the St. Joseph Catholic Church Sinai Youth Group — a vibrant community of young believers united in prayer, fellowship, and service to our Nairobi community.
+            </p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary" id="hero-join-btn">
+                    <i class="fas fa-user-plus"></i> Join Our Community
+                </a>
+                <a href="gallery.html" class="btn btn-outline" id="hero-gallery-btn">
+                    <i class="fas fa-images"></i> View Gallery
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+            <span>Scroll</span>
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+    </section>
+
+    <!-- ==============================
+         STATS BAR
+    ============================== -->
+    <section id="stats" aria-label="Community statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Years Active</span>
+                </div>
+                <div class="stat-item reveal">
+                    <span class="stat-number" data-target="80">0</span>
+                    <span class="stat-label">Youth Members</span>
+                </div>
+                <div class="stat-item reveal">
+                    <span class="stat-number" data-target="30">0</span>
+                    <span class="stat-label">Events Held</span>
+                </div>
+                <div class="stat-item reveal">
+                    <span class="stat-number" data-target="2">0</span>
+                    <span class="stat-label">Masses per Week</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================
+         MISSION & VISION
+    ============================== -->
+    <section id="mission" aria-label="Mission and vision">
+        <div class="container">
+            <div class="section-header center reveal">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">Our Purpose &amp; <span>Vision</span></h2>
+                <p class="section-subtitle">Rooted in faith, led by love — united in our mission to serve Christ and our community.</p>
+            </div>
+
+            <div class="mission-grid">
+                <div class="mission-card reveal">
+                    <div class="mission-icon">🕊️</div>
+                    <h3 class="mission-card-title">Our Mission</h3>
+                    <p class="mission-card-text">
+                        To spread the love of Christ to fellow youths around the world — helping them understand the importance of knowing and serving Christ at a young age. We build a community where faith, friendship, and service flourish together in the heart of Sinai.
+                    </p>
+                </div>
+                <div class="mission-card reveal">
+                    <div class="mission-icon">🌟</div>
+                    <h3 class="mission-card-title">Our Vision</h3>
+                    <p class="mission-card-text">
+                        To win more souls to Christ through the spread of the Gospel and by sharing what we have with others. We envision a bold generation of young Catholics in Nairobi who are compassionate, prayerful, and deeply rooted in their Catholic faith.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================
+         CHAPLAIN
+    ============================== -->
+    <section id="chaplain" aria-label="Our chaplain">
+        <div class="container">
+            <div class="chaplain-inner">
+                <div class="chaplain-img-wrap reveal">
+                    <div class="chaplain-img-bg"></div>
+                    <img
+                        class="chaplain-img"
+                        src="9974.jpg"
+                        alt="Fr. Barnabas Nyakundi 'Chinendu' — Youth Chaplain, St. Mary's Parish Mukuru"
+                        loading="lazy"
+                    >
+                    <div class="chaplain-badge">
+                        <div class="chaplain-badge-title">Youth Chaplain</div>
+                        <div class="chaplain-badge-name">Fr. Barnabas Nyakundi</div>
+                    </div>
+                </div>
+
+                <div class="chaplain-content reveal">
+                    <span class="section-tag">Spiritual Leadership</span>
+                    <h2 class="section-title">Meet Our <span>Chaplain</span></h2>
+                    <p class="section-subtitle" style="max-width: none; margin-top: 16px;">
+                        Father Barnabas Nyakundi "Chinendu" is the Youth Chaplain at St. Mary's Parish, Mukuru. Under his compassionate and inspired leadership, our youth group has grown in numbers, in faith, and in its commitment to community service.
+                    </p>
+                    <p style="color: var(--text-muted); margin-top: 16px; line-height: 1.85;">
+                        He guides our young members with wisdom, patience, and a deep love for the Gospel — challenging every youth to live out their Catholic faith boldly, joyfully, and with purpose in today's world.
+                    </p>
+                    <div class="values-list">
+                        <div class="value-item"><span class="value-dot"></span>Faith Formation</div>
+                        <div class="value-item"><span class="value-dot"></span>Community Service</div>
+                        <div class="value-item"><span class="value-dot"></span>Gospel Outreach</div>
+                        <div class="value-item"><span class="value-dot"></span>Youth Mentorship</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================
+         EVENTS
+    ============================== -->
+    <section id="events" aria-label="Upcoming events">
+        <div class="container">
+            <div class="section-header center reveal">
+                <span class="section-tag">Stay Connected</span>
+                <h2 class="section-title">Upcoming <span>Events</span></h2>
+                <p class="section-subtitle">Join us for worship, fellowship, and service. Everyone is welcome!</p>
+            </div>
+
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card reveal">
+                    <div class="event-date-strip">
+                        <div class="event-date-day">15</div>
+                        <div class="event-date-info">
+                            <span class="event-date-month">June</span>
+                            <span class="event-date-year">2026</span>
+                        </div>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title">Sunday Youth Mass</h4>
+                        <p class="event-desc">Our weekly Sunday Mass for the youth community. Come fellowship and grow in faith with fellow young Catholics from across Sinai.</p>
+                        <div class="event-meta">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            9:00 AM &middot; St. Joseph Church, Sinai
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card reveal">
+                    <div class="event-date-strip">
+                        <div class="event-date-day">22</div>
+                        <div class="event-date-info">
+                            <span class="event-date-month">June</span>
+                            <span class="event-date-year">2026</span>
+                        </div>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title">Youth Fellowship &amp; Bible Study</h4>
+                        <p class="event-desc">Monthly youth meeting for planning, sharing testimonies, and group Bible study. All youth members are strongly encouraged to attend.</p>
+                        <div class="event-meta">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            3:00 PM &middot; Parish Hall
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card reveal">
+                    <div class="event-date-strip">
+                        <div class="event-date-day">05</div>
+                        <div class="event-date-info">
+                            <span class="event-date-month">July</span>
+                            <span class="event-date-year">2026</span>
+                        </div>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title">Deanery Sports Day</h4>
+                        <p class="event-desc">Annual inter-parish deanery sports competition. Cheer on our youth team as they compete and proudly represent St. Joseph, Sinai.</p>
+                        <div class="event-meta">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            All Day &middot; Venue TBD
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================
+         GALLERY PREVIEW
+    ============================== -->
+    <section id="gallery-preview" aria-label="Photo gallery preview">
+        <div class="container">
+            <div class="section-header center reveal">
+                <span class="section-tag">Our Moments</span>
+                <h2 class="section-title">Life in <span>Our Community</span></h2>
+                <p class="section-subtitle">A glimpse of the joy, faith, and fellowship that defines St. Joseph Youth Sinai.</p>
+            </div>
+
+            <div class="gallery-grid reveal">
+                <div class="gallery-item" onclick="window.location='gallery.html'" role="button" tabindex="0" aria-label="View gallery: Youth at deanery sports">
+                    <img src="Screenshot_20230609-142725.jpg" alt="Youth members at the Deanery Sports Day" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-view-btn"><i class="fas fa-expand-alt"></i> View Gallery</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="window.location='gallery.html'" role="button" tabindex="0" aria-label="View gallery: Church interior">
+                    <img src="churchInside.jpeg" alt="Inside St. Joseph Church, Sinai" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-view-btn"><i class="fas fa-expand-alt"></i> View Gallery</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="window.location='gallery.html'" role="button" tabindex="0" aria-label="View gallery: The Cross">
+                    <img src="The cross.jpeg" alt="The Holy Cross" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-view-btn"><i class="fas fa-expand-alt"></i> View Gallery</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="window.location='gallery.html'" role="button" tabindex="0" aria-label="View gallery: St Joseph statue">
+                    <img src="St Joseph.jpeg" alt="St. Joseph the Worker" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-view-btn"><i class="fas fa-expand-alt"></i> View Gallery</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="window.location='gallery.html'" role="button" tabindex="0" aria-label="View gallery: Chaplain">
+                    <img src="9974.jpg" alt="Fr. Barnabas Nyakundi, Youth Chaplain" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-view-btn"><i class="fas fa-expand-alt"></i> View Gallery</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-all-btn reveal">
+                <a href="gallery.html" class="btn btn-primary" id="gallery-view-all-btn">
+                    <i class="fas fa-images"></i> View Full Gallery
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================
+         CONTACT
+    ============================== -->
+    <section id="contact" aria-label="Contact us">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Join Us or <span>Say Hello</span></h2>
+                <p class="section-subtitle">Whether you want to join our youth group or simply reach out, we'd love to hear from you.</p>
+            </div>
+
+            <div class="contact-inner">
+                <!-- Contact Info -->
+                <div class="contact-info reveal">
+                    <h3>We're in Sinai</h3>
+                    <p>We meet every week at St. Joseph Catholic Church in the Sinai estate on Lungalunga Road, Nairobi. Come find us — you are always welcome here.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-detail-text">
+                                <strong>Location</strong>
+                                <span>Sinai Estate, Lungalunga Rd, Nairobi</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon"><i class="fas fa-church"></i></div>
+                            <div class="contact-detail-text">
+                                <strong>Parish</strong>
+                                <span>St. Mary's Parish, Mukuru</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contact-detail-text">
+                                <strong>Youth Mass</strong>
+                                <span>Sundays at 9:00 AM</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon"><i class="fas fa-users"></i></div>
+                            <div class="contact-detail-text">
+                                <strong>Youth Meeting</strong>
+                                <span>Last Sunday of the month, 3:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card reveal">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" autocomplete="given-name">
+                                <span class="form-error" id="firstNameError">Please enter your first name.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" autocomplete="family-name">
+                                <span class="form-error" id="lastNameError">Please enter your last name.</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email">
+                            <span class="form-error" id="emailError">Please enter a valid email address.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">How Can We Help?</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select a topic&hellip;</option>
+                                <option value="join">I want to join the youth group</option>
+                                <option value="event">Enquiry about an event</option>
+                                <option value="prayer">Prayer request</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here&hellip;"></textarea>
+                            <span class="form-error" id="messageError">Please enter a message.</span>
+                        </div>
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================
+         FOOTER
+    ============================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-brand-name">✝ St. Joseph Youth Sinai</div>
+                    <p class="footer-brand-desc">
+                        A vibrant Catholic youth community at St. Mary's Parish, Mukuru, Nairobi. Growing in faith, united in Christ, serving our community with joy.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook" id="footer-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Instagram" id="footer-instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="WhatsApp" id="footer-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link" title="YouTube" id="footer-youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">Quick Links</div>
+                    <div class="footer-links">
+                        <a href="#hero">Home</a>
+                        <a href="#mission">About Us</a>
+                        <a href="#chaplain">Our Chaplain</a>
+                        <a href="#events">Events</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">Our Parish</div>
+                    <div class="footer-links">
+                        <a href="#">St. Mary's Parish, Mukuru</a>
+                        <a href="#">Archdiocese of Nairobi</a>
+                        <a href="#">Youth Commission Kenya</a>
+                        <a href="#">Catholic Church Kenya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2024 St. Joseph Youth Sinai. Built with ❤️ by <strong>itsoftmak</strong>.</p>
+                <p class="footer-copy">Sinai Estate, Lungalunga Rd &middot; Nairobi, Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="alert" aria-live="polite">
+        <span>🙏</span>
+        <span id="toastMsg">Message sent! We'll get back to you soon.</span>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,49 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="this section contains the photos of the youth members.">
-	<title>gallery</title>
-	<link rel="shortcut icon" href="download.jpeg" type="image/x-icon">
-	<link rel="stylesheet" href="gallery.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery — St. Joseph Catholic Church Sinai Youth. Photos of our youth community events, deanery sports, and fellowship moments in Nairobi.">
+    <meta name="theme-color" content="#1a237e">
+    <title>Gallery | St. Joseph Youth Sinai</title>
+
+    <link rel="icon" href="The cross.jpeg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-	<center>
-	<div class="navbar">
-		<img id="icon" src="The cross.jpeg" alt="st Joseph The worker">
-		<a id="homelink" href="index.html">HOME</a>
-	</div>
-	<br>
-	<br>
-	<br> 
 
-	<div id="introduction" >
-		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, quidem necessitatibus voluptates temporibus assumenda <br> enim blanditiis minus dolore provident tempora voluptate reprehenderit magnam libero debitis aspernatur magni velit alias quae.
-	</div>
+    <!-- ==============================
+         NAVBAR
+    ============================== -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-logo" aria-label="St. Joseph Youth Sinai Home">
+                <div class="nav-logo-icon">✝</div>
+                <div>
+                    <div class="nav-logo-text">St. Joseph Youth</div>
+                    <div class="nav-logo-subtitle">Sinai, Nairobi</div>
+                </div>
+            </a>
 
-	
-<hr>
-	<div class="gallery">
-		<img src="download.jpeg" alt="Image 1">
-		<img src="download.jpeg" alt="Image 2">
-		<img src="download.jpeg" alt="Image 3">
-		<img src="download.jpeg" alt="Image 3">
-		<img src="download.jpeg" alt="Image 3">
-		<img src="download.jpeg" alt="Image 3">
-		<img src="download.jpeg" alt="Image 3">
-		<img src="download.jpeg" alt="Image 3">
-		<img src="9974.jpg" alt="Image 3">
-		<img src="St Joseph.jpeg" alt="Image 3">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html"          class="nav-link" id="gnav-home">Home</a>
+                <a href="index.html#mission"  class="nav-link" id="gnav-about">About</a>
+                <a href="index.html#chaplain" class="nav-link" id="gnav-chaplain">Chaplain</a>
+                <a href="index.html#events"   class="nav-link" id="gnav-events">Events</a>
+                <a href="gallery.html"        class="nav-link active" id="gnav-gallery">Gallery</a>
+                <a href="index.html#contact"  class="nav-link nav-cta" id="gnav-contact">Contact Us</a>
+            </div>
 
-	  </div>`
+            <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
 
-	  
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <a href="index.html"          class="nav-link" id="gmnav-home"><i class="fas fa-home fa-fw"></i> Home</a>
+        <a href="index.html#mission"  class="nav-link" id="gmnav-about"><i class="fas fa-book-open fa-fw"></i> About</a>
+        <a href="index.html#events"   class="nav-link" id="gmnav-events"><i class="fas fa-calendar fa-fw"></i> Events</a>
+        <a href="gallery.html"        class="nav-link" id="gmnav-gallery"><i class="fas fa-images fa-fw"></i> Gallery</a>
+        <a href="index.html#contact"  class="nav-link nav-cta" id="gmnav-contact"><i class="fas fa-envelope fa-fw"></i> Contact Us</a>
+    </div>
 
-	 <footer>
-		&copy; 2024 by itsoftmak
-	 </footer> 
-	
-	</center>
+    <!-- ==============================
+         GALLERY PAGE HERO
+    ============================== -->
+    <div class="gallery-page-hero" aria-label="Gallery page header">
+        <div class="gallery-page-hero-overlay"></div>
+        <div class="container gallery-page-hero-content">
+            <span class="section-tag" style="background: rgba(249,168,37,0.2); color: var(--accent);">
+                <i class="fas fa-images"></i> Our Moments
+            </span>
+            <h1 class="gallery-page-title">Photo <span>Gallery</span></h1>
+            <p class="gallery-page-subtitle">
+                A collection of memories from our youth community — events, fellowship, sports, and faith.
+            </p>
+        </div>
+    </div>
+
+    <!-- ==============================
+         LIGHTBOX GALLERY GRID
+    ============================== -->
+    <section class="gallery-page-section" aria-label="Photo gallery">
+        <div class="container">
+
+            <div class="lightbox-grid" id="lightboxGrid">
+
+                <div class="lb-item reveal"
+                     data-src="Screenshot_20230609-142725.jpg"
+                     data-caption="Youth members during the Deanery Sports Day — competing and representing St. Joseph, Sinai."
+                     role="button" tabindex="0" aria-label="Open: Youth at Deanery Sports">
+                    <img src="Screenshot_20230609-142725.jpg" alt="Youth members at the Deanery Sports Day" loading="lazy">
+                    <div class="lb-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Youth at Deanery Sports</span>
+                    </div>
+                </div>
+
+                <div class="lb-item reveal"
+                     data-src="churchInside.jpeg"
+                     data-caption="Inside St. Joseph Church, Sinai — our place of worship and community."
+                     role="button" tabindex="0" aria-label="Open: Church interior">
+                    <img src="churchInside.jpeg" alt="Inside St. Joseph Church, Sinai" loading="lazy">
+                    <div class="lb-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>St. Joseph Church Interior</span>
+                    </div>
+                </div>
+
+                <div class="lb-item reveal"
+                     data-src="The cross.jpeg"
+                     data-caption="The Holy Cross — a symbol of our faith and the centre of our community."
+                     role="button" tabindex="0" aria-label="Open: The Holy Cross">
+                    <img src="The cross.jpeg" alt="The Holy Cross" loading="lazy">
+                    <div class="lb-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>The Holy Cross</span>
+                    </div>
+                </div>
+
+                <div class="lb-item reveal"
+                     data-src="St Joseph.jpeg"
+                     data-caption="St. Joseph the Worker — our patron saint and spiritual model of dedication and humility."
+                     role="button" tabindex="0" aria-label="Open: St Joseph statue">
+                    <img src="St Joseph.jpeg" alt="St. Joseph the Worker" loading="lazy">
+                    <div class="lb-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>St. Joseph the Worker</span>
+                    </div>
+                </div>
+
+                <div class="lb-item reveal"
+                     data-src="9974.jpg"
+                     data-caption="Fr. Barnabas Nyakundi 'Chinendu' — Youth Chaplain at St. Mary's Parish, Mukuru."
+                     role="button" tabindex="0" aria-label="Open: Fr. Barnabas portrait">
+                    <img src="9974.jpg" alt="Fr. Barnabas Nyakundi, Youth Chaplain" loading="lazy">
+                    <div class="lb-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Fr. Barnabas — Our Chaplain</span>
+                    </div>
+                </div>
+
+                <div class="lb-item reveal"
+                     data-src="st Joseph&Son.jpeg"
+                     data-caption="St. Joseph and the Child Jesus — an inspiring image of faith and fatherly love."
+                     role="button" tabindex="0" aria-label="Open: St Joseph and Son">
+                    <img src="st Joseph&Son.jpeg" alt="St. Joseph and the Child Jesus" loading="lazy">
+                    <div class="lb-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>St. Joseph &amp; Child Jesus</span>
+                    </div>
+                </div>
+
+            </div><!-- /.lightbox-grid -->
+
+        </div>
+    </section>
+
+    <!-- ==============================
+         LIGHTBOX MODAL
+    ============================== -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo viewer">
+        <button class="lb-close" id="lbClose" aria-label="Close photo viewer">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lb-nav lb-next" id="lbNext" aria-label="Next photo">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lb-content">
+            <img id="lbImg" src="" alt="Gallery photo">
+            <p class="lb-caption" id="lbCaption"></p>
+            <p class="lb-counter" id="lbCounter"></p>
+        </div>
+    </div>
+
+    <!-- ==============================
+         FOOTER
+    ============================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-brand-name">✝ St. Joseph Youth Sinai</div>
+                    <p class="footer-brand-desc">
+                        A vibrant Catholic youth community at St. Mary's Parish, Mukuru, Nairobi. Growing in faith, united in Christ, serving our community with joy.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">Quick Links</div>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="index.html#mission">About Us</a>
+                        <a href="index.html#chaplain">Our Chaplain</a>
+                        <a href="index.html#events">Events</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-title">Our Parish</div>
+                    <div class="footer-links">
+                        <a href="#">St. Mary's Parish, Mukuru</a>
+                        <a href="#">Archdiocese of Nairobi</a>
+                        <a href="#">Youth Commission Kenya</a>
+                        <a href="#">Catholic Church Kenya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2024 St. Joseph Youth Sinai. Built with ❤️ by <strong>itsoftmak</strong>.</p>
+                <p class="footer-copy">Sinai Estate, Lungalunga Rd &middot; Nairobi, Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
